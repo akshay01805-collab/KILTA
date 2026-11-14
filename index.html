@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KILTA | Theog Ka Apna Food Partner</title>
+
+    <meta name="description" content="Order your favourite food in Theog with KILTA.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <a href="#" class="logo">KILTA<span>.</span></a>
+
+        <div class="location">
+            <small>DELIVERING IN</small>
+            <strong>📍 Theog, Himachal Pradesh</strong>
+        </div>
+
+        <button class="login-btn">Login</button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">THEOG'S LOCAL FOOD DESTINATION</span>
+
+            <h1>
+                Good Food.<br>
+                Good Mood.
+            </h1>
+
+            <h3>Theog Ka Apna Food Partner.</h3>
+
+            <p>
+                Discover your favourite local food and get it
+                delivered right to your doorstep.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search food or restaurants..."
+                >
+
+                <button id="searchButton">Search</button>
+
+            </div>
+
+            <small class="delivery-note">
+                Serving Theog, Himachal Pradesh
+            </small>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900"
+                alt="Delicious food"
+            >
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+   <section class="section" id="categoriesSection">
+
+        <div class="section-heading">
+            <span>WHAT ARE YOU CRAVING?</span>
+            <h2>Explore Categories</h2>
+        </div>
+
+        <div class="category-list">
+
+            <button class="category active" data-category="all">
+                🍽️ All Food
+            </button>
+
+            <button class="category" data-category="pizza">
+                🍕 Pizza
+            </button>
+
+            <button class="category" data-category="burger">
+                🍔 Burger
+            </button>
+
+            <button class="category" data-category="indian">
+                🍛 Indian
+            </button>
+
+            <button class="category" data-category="snacks">
+                🥪 Snacks
+            </button>
+
+            <button class="category" data-category="drinks">
+                🥤 Drinks
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESTAURANTS -->
+    <section class="section" id="restaurants">
+
+        <div class="section-heading">
+            <span>MADE FOR YOUR HUNGER</span>
+            <h2>Popular Restaurants</h2>
+        </div>
+
+        <div class="restaurant-grid" id="restaurantGrid">
+
+            <div class="restaurant-card" data-category="indian">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700"
+                    alt="Indian food"
+                >
+
+                <div class="card-content">
+                    <small>INDIAN FOOD</small>
+                    <h3>Restaurant Name 1</h3>
+                    <p>Authentic Indian Meals</p>
+                    <div class="card-footer">
+                        <span>★ 4.5</span>
+                        <span>30–40 min</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="restaurant-card" data-category="pizza">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
+                    alt="Pizza"
+                >
+
+                <div class="card-content">
+                    <small>PIZZA</small>
+                    <h3>Restaurant Name 2</h3>
+                    <p>Freshly Baked Pizza</p>
+                    <div class="card-footer">
+                        <span>★ 4.3</span>
+                        <span>25–35 min</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="restaurant-card" data-category="burger">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
+                    alt="Burger"
+                >
+
+                <div class="card-content">
+                    <small>BURGERS</small>
+                    <h3>Restaurant Name 3</h3>
+                    <p>Fresh Burgers & Snacks</p>
+                    <div class="card-footer">
+                        <span>★ 4.4</span>
+                        <span>20–30 min</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p id="noResults" hidden>
+            No matching restaurants found.
+        </p>
+
+        <small class="demo-note">
+            Demo listings only. Actual restaurants will be added later.
+        </small>
+
+    </section>
+
+<!-- RESTAURANT MENU PAGE -->
+<section id="restaurantMenu" class="menu-page" hidden>
+
+    <button id="backToRestaurants" class="back-button">
+        ← Back to Restaurants
+    </button>
+
+    <!-- RESTAURANT BANNER -->
+    <div class="restaurant-banner">
+
+        <img id="menuBanner" src="" alt="Restaurant">
+
+        <div class="banner-overlay">
+            <span class="eyebrow">KILTA LOCAL PARTNER</span>
+            <h1 id="menuRestaurantName">Restaurant Name</h1>
+            <p id="menuRestaurantDescription">Fresh food, made with love.</p>
+
+            <div class="restaurant-info">
+                <span id="menuRating">★ 4.5</span>
+                <span id="menuTime">30–40 min</span>
+                <span>Theog</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MENU CATEGORY TABS -->
+    <div class="menu-heading">
+        <div>
+            <span class="eyebrow">OUR MENU</span>
+            <h2>Choose Your Food</h2>
+        </div>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs">
+        <button class="menu-tab active" data-category="all">All</button>
+        <button class="menu-tab" data-category="main">Main Course</button>
+        <button class="menu-tab" data-category="snacks">Snacks</button>
+        <button class="menu-tab" data-category="drinks">Drinks</button>
+    </div>
+
+    <!-- FOOD CARDS -->
+    <div class="food-grid" id="foodGrid"></div>
+
+    <!-- EMPTY MESSAGE -->
+    <p id="emptyFoodMessage" hidden>No food items in this category.</p>
+
+    <!-- CART BAR -->
+    <div class="cart-bar" id="cartBar" hidden>
+        <div>
+            <strong id="cartCount">0 Items</strong>
+            <span id="cartTotal">₹0</span>
+        </div>
+
+        <button id="viewCartButton">
+            View Cart →
+        </button>
+    </div>
+
+</section>
+
+<!-- CART MODAL -->
+<div class="cart-modal" id="cartModal" hidden>
+
+    <div class="cart-box">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart">✕</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total-row">
+            <span>Total Amount</span>
+            <strong id="finalCartTotal">₹0</strong>
+        </div>
+
+        <button id="continueShopping" class="continue-button">
+            Continue Shopping
+        </button>
+
+    </div>
+
+</div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a href="#" class="logo">KILTA<span>.</span></a>
+
+        <p>Theog Ka Apna Food Partner.</p>
+
+        <p>© 2026 KILTA. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
